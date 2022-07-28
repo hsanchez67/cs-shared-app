@@ -6,7 +6,20 @@ export const onCreateSharedApp = /* GraphQL */ `
     onCreateSharedApp {
       id
       clientId
-      configuration
+      offerId
+      loanAmount
+      states
+      offers
+      submittingUser {
+        email
+        firstName
+        lastName
+        phone
+      }
+      sendEmail
+      displayIframe
+      referenceId
+      formUrl
       createdAt
       updatedAt
     }
@@ -17,7 +30,20 @@ export const onUpdateSharedApp = /* GraphQL */ `
     onUpdateSharedApp {
       id
       clientId
-      configuration
+      offerId
+      loanAmount
+      states
+      offers
+      submittingUser {
+        email
+        firstName
+        lastName
+        phone
+      }
+      sendEmail
+      displayIframe
+      referenceId
+      formUrl
       createdAt
       updatedAt
     }
@@ -28,7 +54,20 @@ export const onDeleteSharedApp = /* GraphQL */ `
     onDeleteSharedApp {
       id
       clientId
-      configuration
+      offerId
+      loanAmount
+      states
+      offers
+      submittingUser {
+        email
+        firstName
+        lastName
+        phone
+      }
+      sendEmail
+      displayIframe
+      referenceId
+      formUrl
       createdAt
       updatedAt
     }

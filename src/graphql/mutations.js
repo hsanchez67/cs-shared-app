@@ -9,7 +9,20 @@ export const createSharedApp = /* GraphQL */ `
     createSharedApp(input: $input, condition: $condition) {
       id
       clientId
-      configuration
+      offerId
+      loanAmount
+      states
+      offers
+      submittingUser {
+        email
+        firstName
+        lastName
+        phone
+      }
+      sendEmail
+      displayIframe
+      referenceId
+      formUrl
       createdAt
       updatedAt
     }
@@ -23,7 +36,20 @@ export const updateSharedApp = /* GraphQL */ `
     updateSharedApp(input: $input, condition: $condition) {
       id
       clientId
-      configuration
+      offerId
+      loanAmount
+      states
+      offers
+      submittingUser {
+        email
+        firstName
+        lastName
+        phone
+      }
+      sendEmail
+      displayIframe
+      referenceId
+      formUrl
       createdAt
       updatedAt
     }
@@ -37,7 +63,20 @@ export const deleteSharedApp = /* GraphQL */ `
     deleteSharedApp(input: $input, condition: $condition) {
       id
       clientId
-      configuration
+      offerId
+      loanAmount
+      states
+      offers
+      submittingUser {
+        email
+        firstName
+        lastName
+        phone
+      }
+      sendEmail
+      displayIframe
+      referenceId
+      formUrl
       createdAt
       updatedAt
     }

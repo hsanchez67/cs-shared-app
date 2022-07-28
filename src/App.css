@@ -45,3 +45,58 @@
   height: 960px;
   margin-left: -240px;
 }
+
+/* Loading GoodLeap spinner */
+.loading-smiley-container {
+  position: fixed;
+  z-index: 1000;
+  height: 2em;
+  width: 2em;
+  overflow: visible;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.loading-smiley-container:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loading-smiley {
+  z-index: 9999;
+  height: 60px;
+  animation: load 1.3s ease infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  70% {
+    transform: rotate(390deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Amplify themes */
+.amplify-button[data-variation='primary'] {
+  background: linear-gradient(
+    to right,
+    var(--amplify-colors-green-80),
+    var(--amplify-colors-orange-60)
+  );
+}

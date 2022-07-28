@@ -1,5 +1,20 @@
 type SharedApp @model {
   id: ID!
   clientId: String!
-  configuration: String
+  offerId: String
+  loanAmount: Float
+  states: AWSJSON
+  offers: AWSJSON
+  submittingUser: SubmittingUser
+  sendEmail: Boolean
+  displayIframe: Boolean
+  referenceId: String
+  formUrl: String
+}
+
+type SubmittingUser {
+  email: String!
+  firstName: String
+  lastName: String
+  phone: String
 }

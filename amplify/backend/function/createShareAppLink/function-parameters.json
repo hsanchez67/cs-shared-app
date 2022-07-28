@@ -7,7 +7,9 @@
     }
   ],
   "secretNames": [
-    "customerSuccessApiId",
-    "customerSuccessApiKey"
+    "JulianHeatAndAirLLCApiId",
+    "JulianHeatAndAirLLCApiKey",
+    "CustomerSuccessApiId",
+    "CustomerSuccessApiKey"
   ]
 }

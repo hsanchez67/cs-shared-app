@@ -16,10 +16,10 @@
     "s3Key": {
       "Type": "String"
     },
-    "devApiBaseUrl": {
+    "secretsPathAmplifyAppId": {
       "Type": "String"
     },
-    "secretsPathAmplifyAppId": {
+    "devApiBaseUrl": {
       "Type": "String"
     }
   },
@@ -76,52 +76,96 @@
             "REGION": {
               "Ref": "AWS::Region"
             },
+            "JulianHeatAndAirLLCApiId": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "createShareAppLink"
+                      }
+                    ]
+                  },
+                  "JulianHeatAndAirLLCApiId"
+                ]
+              ]
+            },
+            "JulianHeatAndAirLLCApiKey": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "createShareAppLink"
+                      }
+                    ]
+                  },
+                  "JulianHeatAndAirLLCApiKey"
+                ]
+              ]
+            },
+            "CustomerSuccessApiId": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "createShareAppLink"
+                      }
+                    ]
+                  },
+                  "CustomerSuccessApiId"
+                ]
+              ]
+            },
+            "CustomerSuccessApiKey": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "createShareAppLink"
+                      }
+                    ]
+                  },
+                  "CustomerSuccessApiKey"
+                ]
+              ]
+            },
             "devApiBaseUrl": {
               "Ref": "devApiBaseUrl"
-            },
-            "customerSuccessApiId": {
-              "Fn::Join": [
-                "",
-                [
-                  {
-                    "Fn::Sub": [
-                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
-                      {
-                        "appId": {
-                          "Ref": "secretsPathAmplifyAppId"
-                        },
-                        "env": {
-                          "Ref": "env"
-                        },
-                        "functionName": "createShareAppLink"
-                      }
-                    ]
-                  },
-                  "customerSuccessApiId"
-                ]
-              ]
-            },
-            "customerSuccessApiKey": {
-              "Fn::Join": [
-                "",
-                [
-                  {
-                    "Fn::Sub": [
-                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
-                      {
-                        "appId": {
-                          "Ref": "secretsPathAmplifyAppId"
-                        },
-                        "env": {
-                          "Ref": "env"
-                        },
-                        "functionName": "createShareAppLink"
-                      }
-                    ]
-                  },
-                  "customerSuccessApiKey"
-                ]
-              ]
             }
           }
         },

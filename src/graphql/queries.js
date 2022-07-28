@@ -6,7 +6,20 @@ export const getSharedApp = /* GraphQL */ `
     getSharedApp(id: $id) {
       id
       clientId
-      configuration
+      offerId
+      loanAmount
+      states
+      offers
+      submittingUser {
+        email
+        firstName
+        lastName
+        phone
+      }
+      sendEmail
+      displayIframe
+      referenceId
+      formUrl
       createdAt
       updatedAt
     }
@@ -22,7 +35,20 @@ export const listSharedApps = /* GraphQL */ `
       items {
         id
         clientId
-        configuration
+        offerId
+        loanAmount
+        states
+        offers
+        submittingUser {
+          email
+          firstName
+          lastName
+          phone
+        }
+        sendEmail
+        displayIframe
+        referenceId
+        formUrl
         createdAt
         updatedAt
       }
