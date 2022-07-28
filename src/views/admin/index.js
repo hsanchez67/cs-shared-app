@@ -248,7 +248,7 @@ const Admin = () => {
     <Authenticator
       formFields={formFields}
       components={components}
-      hideSignUp={false}
+      hideSignUp={true}
     >
       {({ signOut }) => (
         <>
