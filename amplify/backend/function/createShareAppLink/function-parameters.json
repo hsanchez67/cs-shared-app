@@ -6,5 +6,8 @@
       "environmentVariableName": "devApiBaseUrl"
     }
   ],
-  "secretNames": []
+  "secretNames": [
+    "SolarTestPartnerApiId",
+    "SolarTestPartnerApiKey"
+  ]
 }

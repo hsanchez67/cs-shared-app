@@ -45,8 +45,9 @@
       "function": {
         "createShareAppLink": {
           "deploymentBucketName": "amplify-cssharedapp-prod-111953-deployment",
-          "s3Key": "amplify-builds/createShareAppLink-41503166483347383677-build.zip",
-          "devApiBaseUrl": "https://api.loanpal.com/posfinancing"
+          "s3Key": "amplify-builds/createShareAppLink-564a454e4d654a515559-build.zip",
+          "devApiBaseUrl": "https://api.loanpal.com/posfinancing",
+          "secretsPathAmplifyAppId": "d1mti5aer6bnag"
         }
       }
     }
