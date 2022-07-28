@@ -20,7 +20,7 @@
         "createShareAppLink": {
           "secretsPathAmplifyAppId": "d1mti5aer6bnag",
           "deploymentBucketName": "amplify-cssharedapp-dev-153313-deployment",
-          "s3Key": "amplify-builds/createShareAppLink-457954574a426e673369-build.zip",
+          "s3Key": "amplify-builds/createShareAppLink-564a454e4d654a515559-build.zip",
           "devApiBaseUrl": "https://sandbox01-api.loanpal.com/posfinancing"
         }
       }
