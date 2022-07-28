@@ -10,6 +10,7 @@ export const createSharedApp = /* GraphQL */ `
       id
       clientId
       offerId
+      channel
       loanAmount
       states
       offers
@@ -37,6 +38,7 @@ export const updateSharedApp = /* GraphQL */ `
       id
       clientId
       offerId
+      channel
       loanAmount
       states
       offers
@@ -64,6 +66,7 @@ export const deleteSharedApp = /* GraphQL */ `
       id
       clientId
       offerId
+      channel
       loanAmount
       states
       offers

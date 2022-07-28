@@ -74,7 +74,7 @@ const Home = () => {
     const {
       referenceNumber,
       offerId,
-      // groupId,
+      channel,
       state,
       email,
       firstName,
@@ -90,7 +90,7 @@ const Home = () => {
     return JSON.stringify({
       referenceNumber: referenceNumber !== "" ? referenceNumber : lastName,
       offerId: offerId,
-      // channel: groupId,
+      channel: channel,
       state: state,
       applicant: {
         email: email,
@@ -159,7 +159,7 @@ const Home = () => {
               email: "",
               categoryId: "",
               state: "",
-              groupId: "",
+              channel: SharedApp ? SharedApp.channel : "",
               referenceNumber: "",
               offerId: SharedApp ? SharedApp.offerId : "",
               loanAmount: SharedApp ? SharedApp.loanAmount : 25000,

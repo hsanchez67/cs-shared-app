@@ -7,6 +7,7 @@ export const getSharedApp = /* GraphQL */ `
       id
       clientId
       offerId
+      channel
       loanAmount
       states
       offers
@@ -36,6 +37,7 @@ export const listSharedApps = /* GraphQL */ `
         id
         clientId
         offerId
+        channel
         loanAmount
         states
         offers

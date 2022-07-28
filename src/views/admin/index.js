@@ -34,6 +34,7 @@ const initialState = {
   id: "",
   clientId: "",
   offerId: "",
+  channel: "",
   states: "",
   loanAmount: 0.0,
   sendEmail: false,
@@ -128,6 +129,7 @@ const Admin = () => {
       id: app.id,
       clientId: app.clientId,
       offerId: app.offerId,
+      channel: app.channel,
       states: JSON.parse(app.states),
       loanAmount: app.loanAmount,
       offers: app.offers,
@@ -180,6 +182,7 @@ const Admin = () => {
         id: app.id ? app.id : "",
         clientId: app.clientId,
         offerId: app.offerId,
+        channel: app.channel,
         loanAmount: app.loanAmount,
         states: JSON.stringify(app.states.replace(/\s/g, "")),
         offers: JSON.stringify({}),
@@ -198,6 +201,7 @@ const Admin = () => {
       return {
         clientId: app.clientId,
         offerId: app.offerId,
+        channel: app.channel,
         loanAmount: app.loanAmount,
         states: JSON.stringify(app.states.replace(/\s/g, "")),
         offers: JSON.stringify({}),
@@ -219,6 +223,7 @@ const Admin = () => {
       if (
         !formState.clientId ||
         !formState.offerId ||
+        !formState.channel ||
         !formState.submittingUserEmail ||
         !formState.submittingUserFname ||
         !formState.submittingUserLname
@@ -281,6 +286,12 @@ const Admin = () => {
               style={styles.input}
               value={formState.offerId}
               label="Offer Id"
+            />
+            <TextField
+              onChange={(event) => setInput("channel", event.target.value)}
+              style={styles.input}
+              value={formState.channel}
+              label="Offer channel"
             />
             <TextAreaField
               autoComplete="off"

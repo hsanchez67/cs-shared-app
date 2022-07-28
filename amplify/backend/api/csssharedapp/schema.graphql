@@ -2,6 +2,7 @@ type SharedApp @model {
   id: ID!
   clientId: String!
   offerId: String
+  channel: String
   loanAmount: Float
   states: AWSJSON
   offers: AWSJSON
