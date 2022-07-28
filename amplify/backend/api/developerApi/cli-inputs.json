@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/categories": {
+      "name": "/categories",
+      "lambdaFunction": "createShareAppLink",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/loans-share": {
+      "name": "/loans-share",
+      "lambdaFunction": "createShareAppLink",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

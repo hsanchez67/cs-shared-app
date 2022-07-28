@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 960px;
+  margin-left: -240px;
+}

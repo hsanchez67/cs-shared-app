@@ -1,0 +1,13 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "devApiBaseUrl",
+      "environmentVariableName": "devApiBaseUrl"
+    }
+  ],
+  "secretNames": [
+    "customerSuccessApiId",
+    "customerSuccessApiKey"
+  ]
+}

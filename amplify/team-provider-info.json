@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cssharedapp-dev-153313-authRole",
+      "UnauthRoleArn": "arn:aws:iam::516627877023:role/amplify-cssharedapp-dev-153313-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::516627877023:role/amplify-cssharedapp-dev-153313-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-cssharedapp-dev-153313-deployment",
+      "UnauthRoleName": "amplify-cssharedapp-dev-153313-unauthRole",
+      "StackName": "amplify-cssharedapp-dev-153313",
+      "StackId": "arn:aws:cloudformation:us-west-2:516627877023:stack/amplify-cssharedapp-dev-153313/46a805f0-0a0e-11ed-bc0a-0aa18e8e4387",
+      "AmplifyAppId": "d1mti5aer6bnag",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-cssharedapp-dev-153313-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "cssharedappe51635b6": {}
+      },
+      "function": {
+        "createShareAppLink": {
+          "devApiBaseUrl": "https://sandbox01-api.loanpal.com/posfinancing",
+          "secretsPathAmplifyAppId": "d1mti5aer6bnag",
+          "deploymentBucketName": "amplify-cssharedapp-dev-153313-deployment",
+          "s3Key": "amplify-builds/createShareAppLink-62344b786e6a74486c45-build.zip"
+        }
+      }
+    }
+  }
+}

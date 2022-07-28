@@ -1,0 +1,5 @@
+type SharedApp @model {
+  id: ID!
+  clientId: String!
+  configuration: String
+}
