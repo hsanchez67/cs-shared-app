@@ -6,10 +6,5 @@
       "environmentVariableName": "devApiBaseUrl"
     }
   ],
-  "secretNames": [
-    "JulianHeatAndAirLLCApiId",
-    "JulianHeatAndAirLLCApiKey",
-    "CustomerSuccessApiId",
-    "CustomerSuccessApiKey"
-  ]
+  "secretNames": []
 }
